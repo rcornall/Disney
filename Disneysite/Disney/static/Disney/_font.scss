@@ -1,0 +1,14 @@
+// fonts.scss
+@font-face{
+	font-family: "Walt";
+	src: url('/static/Fonts/Walt.ttf');
+}
+
+$font_title: "adobe-clean", "Helvetica Neue", Helvetica;
+$font_title_size: 30px;
+$color_title: #1A1A00;
+$color_background: #ffffd7;
+$color_topbar: #2f2f2f;
+
+
+$topbar_height: 34px;

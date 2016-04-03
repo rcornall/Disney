@@ -1,0 +1,69 @@
+//_header.scss
+@import "libraries/bourbon/bourbon.scss";
+
+@import "libraries/neat/neat.scss";
+
+@import "_font";
+@import "_tags";
+
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.topbar {
+	background: $color_topbar;
+	width: 100%;	
+	height:	$topbar_height;
+	line-height: 1;
+	font-size: 13px;
+}
+.topbar-wrapper {
+	width: 80%;
+	padding-left: 0;
+	position: relative;
+	margin: 0 auto;
+	height: 34px;
+	text-align: left;
+}
+
+#main {
+	@include outer-container();
+}
+
+#header {
+	width: 80%;
+	height: $topbar_height*3;
+	margin: 0 auto;
+}
+
+#row-1 {
+	// box-sizing: border-box;
+	padding-left: 0;
+	position: relative;
+	height: 350px;
+	// @include span-columns(12);
+	@include row(table);
+	width: 85%;
+	margin: 0 auto;
+}
+#col-1 {
+	@include span-columns(4 of 12);
+	// @include pad(em(15));
+    // overflow: hidden;
+	height: 100%;
+}
+<<<<<<<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<>>>>
+#movie {
+	display: block;
+	object-fit: cover;
+	width: 200px; /*set the width or max-width*/
+
+    // height: auto;
+    height: 290px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    border-radius: 13px;
+}

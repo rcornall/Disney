@@ -1,0 +1,21 @@
+div.movie-col1{
+	margin-left: 0;
+	margin-right: -100%;
+	clear: none;
+}
+div.movie-col2{
+	margin-left: 33.33333%;
+	margin-right: -100%;
+	clear: none;
+}
+div.movie-col3{
+	margin-left: 66.66667%;
+	margin-right: -100%;
+	clear: none;	
+}
+a.title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #F8F8F2;
+	font-family: "Helvetica", Courier, monospace;
+}

@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Disney/main.css' %}" />
+
+<body>
+<div class="topbar">
+	<div class="topbar-wrapper">
+		<a href="https://en.wikipedia.org/wiki/List_of_Walt_Disney_Pictures_films">Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney</a>
+	</div>
+</div>
+<div id="header">
+	<img src="/static/Disney/images/Disney_logo.png" alt="DisneyLogo">
+</div>
+<div id="main">
+	{%if movie_list%}
+		<div id="row-1">
+			{%for movie in movie_list%}
+				<div id="col-1">
+				<img src= "{{ movie.poster }}" alt="poster-{{movie.title}}"/>
+				<h2>{{movie.title }} - {{movie.year}}</h2>
+				</div>
+				{%if forloop.counter|divisibleby:3 %}
+					</div>
+					<div id="row-1">
+				{%endif%}
+			{%endfor%}
+		</div>
+	{%endif%}
+</div>
+</body>
