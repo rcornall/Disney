@@ -9,22 +9,44 @@
 	</div>
 </div>
 <div id="header">
-	<img src="/static/Disney/images/Disney_logo.png" alt="DisneyLogo">
+	<img id="disney-logo" src="/static/Disney/images/Disney_logo.png" alt="DisneyLogo">
+	<img id="mouse_logo" src="/static/Disney/images/mouse_logo.png" alt="MouseLogo">
+	<a id="head">Movies</a>
 </div>
 <div id="main">
-	{%if movie_list%}
-		<div id="row-1">
-			{%for movie in movie_list%}
-				<div id="col-1">
-				<img src= "{{ movie.poster }}" alt="poster-{{movie.title}}"/>
-				<h2>{{movie.title }} - {{movie.year}}</h2>
-				</div>
-				{%if forloop.counter|divisibleby:3 %}
+	<div id="main-movie">
+		{%if movie_list%}
+			<div id="row-1">
+				{%for movie in movie_list%}
+					{%if forloop.counter|divisibleby:3 %}
+					<div id="col-3">
+						<a href="/movies/{{movie.title}}/"><div id="col-1-container">
+							<img id="movie" src= "{{ movie.poster }}" alt="poster {{movie.title}}"/>
+							<h2>{{movie.title}}  {{movie.year}}</h2>
+						</div></a>
+					</div>
 					</div>
 					<div id="row-1">
-				{%endif%}
-			{%endfor%}
+					{%else%}
+					<div id="col-1">
+						<a href="/movies/{{movie.title}}/"><div id="col-1-container">
+							<img id="movie" src= "{{ movie.poster }}" alt="poster {{movie.title}}"/>
+							<h2>{{movie.title }} {{movie.year}}</h2>
+						</div></a>
+					</div>
+					{%endif %}
+					{%if forloop.counter|divisibleby:3 %}
+						</div>
+						<div id="row-1">
+					{%endif%}
+				{%endfor%}
+			</div>
+		{%endif%}
+	</div>
+	<div id="main-side">
+		<div id="main-side-1">
+			
 		</div>
-	{%endif%}
+	</div>
 </div>
 </body>

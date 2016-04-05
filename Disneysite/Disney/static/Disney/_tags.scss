@@ -9,31 +9,33 @@ div {
 	border: 0;
 	font-size: 100%;
 }
-h1{
-	font-family: "Walt";
-	font-size: 100%;
-	color: $color_topbar;
-}
 h2 {
 	font-family: $font_title;
+	font-weight: 10%;
 	font-size: 100%;
+	width: 80%;
 	color: $color_title;
 	text-align: center;
+	border-top: 1px #ACA16D solid;
+	margin-top: 2;
+	margin-right: auto;
+	margin-left: auto;
 	clear: both;
 }
-img {
-	display: block;
-	object-fit: cover;
-	width: 200px; /*set the width or max-width*/
 
-    // height: auto;
-    height: 290px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-    border-radius: 13px;
-}
+// img {
+// 	display: block;
+// 	object-fit: cover;
+// 	width: 200px; /*set the width or max-width*/
+
+//     // height: auto;
+//     height: 290px;
+//     overflow: hidden;
+//     margin-left: auto;
+//     margin-right: auto;
+//     clear: both;
+//     border-radius: 13px;
+// }
 body {
 	background-color: $color_background;
 }

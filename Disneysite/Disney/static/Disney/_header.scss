@@ -19,20 +19,46 @@ body{
 	font-size: 13px;
 }
 .topbar-wrapper {
-	width: 80%;
+	width: 82%;
 	padding-left: 0;
 	position: relative;
 	margin: 0 auto;
 	height: 34px;
 	text-align: left;
 }
-
+#head{
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	margin-top: $topbar_height/1.41;
+	margin-left: $topbar_height;
+	padding-top: 0;
+	color: #111111;
+}
 #main {
 	@include outer-container();
+	margin-left: 0;
+	margin-right: 0;
+	width: 82%;
+	margin: 0 auto;
 }
 
+#main-movie {
+	@include span-columns(9 of 12);
+	margin-right: 0;
+}
+#main-side {
+	@include span-columns(3 of 12);
+	height: 100%;
+	border: 1px #dfdfdf solid;
+}
+#main-side-1 {
+	border: 3px #fff solid;
+	height: 100%;
+	background: $color-sidebar;
+}
 #header {
-	width: 80%;
+	width: 82%;
 	height: $topbar_height*3;
 	margin: 0 auto;
 }
@@ -40,11 +66,11 @@ body{
 #row-1 {
 	// box-sizing: border-box;
 	padding-left: 0;
-	position: relative;
+	// position: relative;
 	height: 350px;
 	// @include span-columns(12);
 	@include row(table);
-	width: 85%;
+	// width: 82%;
 	margin: 0 auto;
 }
 #col-1 {
@@ -53,7 +79,14 @@ body{
     // overflow: hidden;
 	height: 100%;
 }
-<<<<<<<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<>>>>
+#col-3 {
+	width: 200px;
+	height: 100%;
+}
+#col-1-container {
+	width: 200px; 
+    height: 312px;
+}
 #movie {
 	display: block;
 	object-fit: cover;
@@ -62,8 +95,23 @@ body{
     // height: auto;
     height: 290px;
     overflow: hidden;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     clear: both;
     border-radius: 13px;
+}
+#disney-logo {
+	display: block;
+	width: 170;
+	height: auto;
+	float: left;
+	margin-top: $topbar_height/2
+	// padding: $topbar_height/2 0 0 0;
+}
+#mouse_logo {
+	display: block;
+	height: 50;
+	width: auto;
+	float: left;
+	margin-top: $topbar_height/1.41
 }

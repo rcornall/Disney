@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Disney/main.css' %}" />
+
+<body>
+<div class="topbar">
+	<div class="topbar-wrapper">
+		<a href="https://en.wikipedia.org/wiki/List_of_Walt_Disney_Pictures_films">Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney Movies Disney</a>
+	</div>
+</div>
+<div id="header">
+	<img id="disney-logo" src="/static/Disney/images/Disney_logo.png" alt="DisneyLogo">
+	<img id="mouse_logo" src="/static/Disney/images/mouse_logo.png" alt="MouseLogo">
+	<a id="head">{{movie.title}} - {{movie.year}}</a>
+</div>
+<div id="main">
+<div id="main-movie">
+<div id="row-1">
+<div id="col-1">
+	<img id="movie" src= "{{ movie.poster }}" alt="poster {{movie.title}}"/>
+							<h2>{{movie.title}}  {{movie.year}}</h2>
+</div>
+</div>
+</div>
+</div>
+</body>
